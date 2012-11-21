@@ -1,6 +1,7 @@
 require "tictactoe/version"
 require "tictactoe/humanplayer"
 require "tictactoe/smartplayer"
+require "tictactoe/minimaxplayer"
 require "tictactoe/dumbplayer"
 require "tictactoe/board"
 

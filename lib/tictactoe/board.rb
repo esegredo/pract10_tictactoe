@@ -8,6 +8,7 @@ module Tictactoe
   end
   
   class Board
+		attr_reader :squares
     class Row
       def initialize( squares, names )
         @squares  = squares
