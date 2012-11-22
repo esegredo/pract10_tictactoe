@@ -9,8 +9,4 @@ describe Tictactoe::SmartPlayer do
 		@sp.respond_to?("move").should == true
 	end
 	
-	it "Debe existir un metodo finish" do
-		@sp.respond_to?("finish").should == true
-	end
-
 end

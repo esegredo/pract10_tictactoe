@@ -40,3 +40,10 @@ desc "Run DumbPlayer tests"
 task :dp_test do
 	sh "ruby -Ilib test/tc_dumbplayer.rb"
 end
+
+desc "Run TicTacToe by specifying two different players"
+task :player, :x_player, :o_player do |player, args|
+  x_player = args[:x_player] || 'human'
+  o_player = args[:o_player] || 'minimax'
+  sh "ruby -Ilib bin/tictactoe_game_players.rb #{x_player} #{o_player}"
+end

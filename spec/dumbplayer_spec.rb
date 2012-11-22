@@ -9,8 +9,4 @@ describe Tictactoe::DumbPlayer do
 		@dp.respond_to?("move").should == true
 	end
 	
-	it "Debe existir un metodo finish" do
-		@dp.respond_to?("finish").should == true
-	end
-
 end

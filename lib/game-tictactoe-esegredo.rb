@@ -27,10 +27,18 @@ module Tictactoe
         break if @board.won?
             
         @board[@o_player.move(@board)] = @o_player.mark
-      end 
-          
-      @o_player.finish @board
-      @x_player.finish @board
+      end
+
+			puts @board
+
+      if @board.won? == @x_player.mark
+        print "Player (#{@x_player.mark}) has won!\n\n"
+      elsif @board.won? == " "
+        print "Tie game.\n\n"
+      else
+        print "Player (#{@o_player.mark}) has won!\n\n"
+      end
     end 
+
   end 
 end

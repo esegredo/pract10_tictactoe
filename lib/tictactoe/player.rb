@@ -9,8 +9,6 @@ module Tictactoe
     def move( board )
       raise NotImplementedError, "Player subclasses must define move()."
     end
-    
-    def finish( final_board )  
-    end
+
   end
 end

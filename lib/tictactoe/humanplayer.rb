@@ -14,17 +14,5 @@ module Tictactoe
       end
       move.chomp
     end
-    
-    def finish( final_board )
-      print final_board
-      
-      if final_board.won? == @mark
-        print "Congratulations, you win.\n\n"
-      elsif final_board.won? == " "
-        print "Tie game.\n\n"
-      else
-        print "You lost tic-tac-toe?!\n\n"
-      end
-    end
   end
 end
