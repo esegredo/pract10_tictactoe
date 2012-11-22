@@ -11,6 +11,11 @@ task :smart do
 	sh "ruby -Ilib bin/tictactoe_game.rb"
 end
 
+desc "Run TicTacToe game vs minimax player"
+task :minimax do
+	sh "ruby -Ilib bin/tictactoe_game.rb -m"
+end
+
 desc "Run TicTacToe game vs dumb player"
 task :dumb do
 	sh "ruby -Ilib bin/tictactoe_game.rb -d"
